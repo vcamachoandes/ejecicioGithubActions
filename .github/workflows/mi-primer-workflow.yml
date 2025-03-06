@@ -15,10 +15,10 @@ jobs:
           python-version: '3.13'
     - name: Correr pruebas
       id: correr-pruebas
-      run: python -m unittest -v test_ejemplo.py
+      run: python -m unittest -v test-ejemplo.py
     - name: Correr pruebas
       id: cubrimiento
       run: |
         pip install coverage
-        coverage run -m unittest test_ejemplo.py
+        coverage run -m unittest test-ejemplo.py
         coverage report -m
